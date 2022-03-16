@@ -22,11 +22,12 @@
 		<main>
 			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-6 p-5">
-						<input v-model="message" type="text" placeholder="type here a message...">
-						<input v-model="image" type="text" placeholder="insert image url...">
-						<h1>{{message}}</h1>
-						<img :src="image" alt="">
+					<div class="col-6 p-5 text-center">
+						<input v-model="message" type="text" placeholder="type here a message..." class="mx-auto mb-2">
+						<input v-model="image" type="text" placeholder="insert image url..." class="mx-auto mb-2">
+						<h1 class="py-3">{{message}}</h1>
+						<img :src="image" alt="" class="mb-5">
+						<button class="btn btn-info fw-bold" :style="{color}" @click="toggleColor">Click me!</button>
 					</div>
 				</div>
 			</div>

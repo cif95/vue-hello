@@ -9,6 +9,12 @@ const app = new Vue(
 		data: {
 			message:'',
 			image:'',
+			color:'white',
+		},
+		methods: {
+			toggleColor() {
+				this.color = this.color === 'white' ? 'blue' : 'white'
+			},
 		}
 	}
 );
